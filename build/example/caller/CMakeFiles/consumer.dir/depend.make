@@ -8,5 +8,6 @@ example/caller/CMakeFiles/consumer.dir/calluserservice.cc.o: ../example/user.pb.
 example/caller/CMakeFiles/consumer.dir/calluserservice.cc.o: ../src/include/distributedrpc.h
 example/caller/CMakeFiles/consumer.dir/calluserservice.cc.o: ../src/include/drpcchannel.h
 example/caller/CMakeFiles/consumer.dir/calluserservice.cc.o: ../src/include/drpcconfig.h
+example/caller/CMakeFiles/consumer.dir/calluserservice.cc.o: ../src/include/drpccontroller.h
 example/caller/CMakeFiles/consumer.dir/calluserservice.cc.o: ../example/caller/calluserservice.cc
 

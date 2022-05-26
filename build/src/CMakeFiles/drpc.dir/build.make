@@ -89,9 +89,22 @@ src/CMakeFiles/drpc.dir/distributedrpc.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drpc.dir/distributedrpc.cc.s"
 	cd /data/home/maomao/GithubProject/DistributedRPCFrameword/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/home/maomao/GithubProject/DistributedRPCFrameword/src/distributedrpc.cc -o CMakeFiles/drpc.dir/distributedrpc.cc.s
 
+src/CMakeFiles/drpc.dir/drcpcontroller.cc.o: src/CMakeFiles/drpc.dir/flags.make
+src/CMakeFiles/drpc.dir/drcpcontroller.cc.o: ../src/drcpcontroller.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/home/maomao/GithubProject/DistributedRPCFrameword/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/drpc.dir/drcpcontroller.cc.o"
+	cd /data/home/maomao/GithubProject/DistributedRPCFrameword/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drpc.dir/drcpcontroller.cc.o -c /data/home/maomao/GithubProject/DistributedRPCFrameword/src/drcpcontroller.cc
+
+src/CMakeFiles/drpc.dir/drcpcontroller.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drpc.dir/drcpcontroller.cc.i"
+	cd /data/home/maomao/GithubProject/DistributedRPCFrameword/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/home/maomao/GithubProject/DistributedRPCFrameword/src/drcpcontroller.cc > CMakeFiles/drpc.dir/drcpcontroller.cc.i
+
+src/CMakeFiles/drpc.dir/drcpcontroller.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drpc.dir/drcpcontroller.cc.s"
+	cd /data/home/maomao/GithubProject/DistributedRPCFrameword/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/home/maomao/GithubProject/DistributedRPCFrameword/src/drcpcontroller.cc -o CMakeFiles/drpc.dir/drcpcontroller.cc.s
+
 src/CMakeFiles/drpc.dir/drpcchannel.cc.o: src/CMakeFiles/drpc.dir/flags.make
 src/CMakeFiles/drpc.dir/drpcchannel.cc.o: ../src/drpcchannel.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/home/maomao/GithubProject/DistributedRPCFrameword/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/drpc.dir/drpcchannel.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/home/maomao/GithubProject/DistributedRPCFrameword/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/drpc.dir/drpcchannel.cc.o"
 	cd /data/home/maomao/GithubProject/DistributedRPCFrameword/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drpc.dir/drpcchannel.cc.o -c /data/home/maomao/GithubProject/DistributedRPCFrameword/src/drpcchannel.cc
 
 src/CMakeFiles/drpc.dir/drpcchannel.cc.i: cmake_force
@@ -104,7 +117,7 @@ src/CMakeFiles/drpc.dir/drpcchannel.cc.s: cmake_force
 
 src/CMakeFiles/drpc.dir/drpcconfig.cc.o: src/CMakeFiles/drpc.dir/flags.make
 src/CMakeFiles/drpc.dir/drpcconfig.cc.o: ../src/drpcconfig.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/home/maomao/GithubProject/DistributedRPCFrameword/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/drpc.dir/drpcconfig.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/home/maomao/GithubProject/DistributedRPCFrameword/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/drpc.dir/drpcconfig.cc.o"
 	cd /data/home/maomao/GithubProject/DistributedRPCFrameword/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drpc.dir/drpcconfig.cc.o -c /data/home/maomao/GithubProject/DistributedRPCFrameword/src/drpcconfig.cc
 
 src/CMakeFiles/drpc.dir/drpcconfig.cc.i: cmake_force
@@ -117,7 +130,7 @@ src/CMakeFiles/drpc.dir/drpcconfig.cc.s: cmake_force
 
 src/CMakeFiles/drpc.dir/rpcheader.pb.cc.o: src/CMakeFiles/drpc.dir/flags.make
 src/CMakeFiles/drpc.dir/rpcheader.pb.cc.o: ../src/rpcheader.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/home/maomao/GithubProject/DistributedRPCFrameword/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/drpc.dir/rpcheader.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/home/maomao/GithubProject/DistributedRPCFrameword/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/drpc.dir/rpcheader.pb.cc.o"
 	cd /data/home/maomao/GithubProject/DistributedRPCFrameword/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drpc.dir/rpcheader.pb.cc.o -c /data/home/maomao/GithubProject/DistributedRPCFrameword/src/rpcheader.pb.cc
 
 src/CMakeFiles/drpc.dir/rpcheader.pb.cc.i: cmake_force
@@ -130,7 +143,7 @@ src/CMakeFiles/drpc.dir/rpcheader.pb.cc.s: cmake_force
 
 src/CMakeFiles/drpc.dir/rpcprovider.cc.o: src/CMakeFiles/drpc.dir/flags.make
 src/CMakeFiles/drpc.dir/rpcprovider.cc.o: ../src/rpcprovider.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/home/maomao/GithubProject/DistributedRPCFrameword/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/drpc.dir/rpcprovider.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/home/maomao/GithubProject/DistributedRPCFrameword/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/drpc.dir/rpcprovider.cc.o"
 	cd /data/home/maomao/GithubProject/DistributedRPCFrameword/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drpc.dir/rpcprovider.cc.o -c /data/home/maomao/GithubProject/DistributedRPCFrameword/src/rpcprovider.cc
 
 src/CMakeFiles/drpc.dir/rpcprovider.cc.i: cmake_force
@@ -144,6 +157,7 @@ src/CMakeFiles/drpc.dir/rpcprovider.cc.s: cmake_force
 # Object files for target drpc
 drpc_OBJECTS = \
 "CMakeFiles/drpc.dir/distributedrpc.cc.o" \
+"CMakeFiles/drpc.dir/drcpcontroller.cc.o" \
 "CMakeFiles/drpc.dir/drpcchannel.cc.o" \
 "CMakeFiles/drpc.dir/drpcconfig.cc.o" \
 "CMakeFiles/drpc.dir/rpcheader.pb.cc.o" \
@@ -153,13 +167,14 @@ drpc_OBJECTS = \
 drpc_EXTERNAL_OBJECTS =
 
 ../lib/libdrpc.a: src/CMakeFiles/drpc.dir/distributedrpc.cc.o
+../lib/libdrpc.a: src/CMakeFiles/drpc.dir/drcpcontroller.cc.o
 ../lib/libdrpc.a: src/CMakeFiles/drpc.dir/drpcchannel.cc.o
 ../lib/libdrpc.a: src/CMakeFiles/drpc.dir/drpcconfig.cc.o
 ../lib/libdrpc.a: src/CMakeFiles/drpc.dir/rpcheader.pb.cc.o
 ../lib/libdrpc.a: src/CMakeFiles/drpc.dir/rpcprovider.cc.o
 ../lib/libdrpc.a: src/CMakeFiles/drpc.dir/build.make
 ../lib/libdrpc.a: src/CMakeFiles/drpc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/home/maomao/GithubProject/DistributedRPCFrameword/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ../../lib/libdrpc.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/home/maomao/GithubProject/DistributedRPCFrameword/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library ../../lib/libdrpc.a"
 	cd /data/home/maomao/GithubProject/DistributedRPCFrameword/build/src && $(CMAKE_COMMAND) -P CMakeFiles/drpc.dir/cmake_clean_target.cmake
 	cd /data/home/maomao/GithubProject/DistributedRPCFrameword/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drpc.dir/link.txt --verbose=$(VERBOSE)
 

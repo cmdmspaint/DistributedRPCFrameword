@@ -171,6 +171,33 @@ distributedrpc.cc.s:
 	cd /data/home/maomao/GithubProject/DistributedRPCFrameword/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drpc.dir/build.make src/CMakeFiles/drpc.dir/distributedrpc.cc.s
 .PHONY : distributedrpc.cc.s
 
+drcpcontroller.o: drcpcontroller.cc.o
+
+.PHONY : drcpcontroller.o
+
+# target to build an object file
+drcpcontroller.cc.o:
+	cd /data/home/maomao/GithubProject/DistributedRPCFrameword/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drpc.dir/build.make src/CMakeFiles/drpc.dir/drcpcontroller.cc.o
+.PHONY : drcpcontroller.cc.o
+
+drcpcontroller.i: drcpcontroller.cc.i
+
+.PHONY : drcpcontroller.i
+
+# target to preprocess a source file
+drcpcontroller.cc.i:
+	cd /data/home/maomao/GithubProject/DistributedRPCFrameword/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drpc.dir/build.make src/CMakeFiles/drpc.dir/drcpcontroller.cc.i
+.PHONY : drcpcontroller.cc.i
+
+drcpcontroller.s: drcpcontroller.cc.s
+
+.PHONY : drcpcontroller.s
+
+# target to generate assembly for a file
+drcpcontroller.cc.s:
+	cd /data/home/maomao/GithubProject/DistributedRPCFrameword/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drpc.dir/build.make src/CMakeFiles/drpc.dir/drcpcontroller.cc.s
+.PHONY : drcpcontroller.cc.s
+
 drpcchannel.o: drpcchannel.cc.o
 
 .PHONY : drpcchannel.o
@@ -291,6 +318,9 @@ help:
 	@echo "... distributedrpc.o"
 	@echo "... distributedrpc.i"
 	@echo "... distributedrpc.s"
+	@echo "... drcpcontroller.o"
+	@echo "... drcpcontroller.i"
+	@echo "... drcpcontroller.s"
 	@echo "... drpcchannel.o"
 	@echo "... drpcchannel.i"
 	@echo "... drpcchannel.s"

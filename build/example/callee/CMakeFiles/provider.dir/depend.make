@@ -6,7 +6,9 @@ example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o: ../example/user.pb.h
 
 example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../example/user.pb.h
 example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../src/include/distributedrpc.h
+example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../src/include/drpcchannel.h
 example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../src/include/drpcconfig.h
+example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../src/include/drpccontroller.h
 example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../src/include/rpcprovider.h
 example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../example/callee/userservice.cc
 

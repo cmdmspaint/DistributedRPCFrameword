@@ -3,12 +3,18 @@
 
 src/CMakeFiles/drpc.dir/distributedrpc.cc.o
  ../src/include/distributedrpc.h
+ ../src/include/drpcchannel.h
  ../src/include/drpcconfig.h
+ ../src/include/drpccontroller.h
  /data/home/maomao/GithubProject/DistributedRPCFrameword/src/distributedrpc.cc
+src/CMakeFiles/drpc.dir/drcpcontroller.cc.o
+ ../src/include/drpccontroller.h
+ /data/home/maomao/GithubProject/DistributedRPCFrameword/src/drcpcontroller.cc
 src/CMakeFiles/drpc.dir/drpcchannel.cc.o
  ../src/include/distributedrpc.h
  ../src/include/drpcchannel.h
  ../src/include/drpcconfig.h
+ ../src/include/drpccontroller.h
  ../src/include/rpcheader.pb.h
  /data/home/maomao/GithubProject/DistributedRPCFrameword/src/drpcchannel.cc
 src/CMakeFiles/drpc.dir/drpcconfig.cc.o
@@ -19,7 +25,9 @@ src/CMakeFiles/drpc.dir/rpcheader.pb.cc.o
  /data/home/maomao/GithubProject/DistributedRPCFrameword/src/rpcheader.pb.cc
 src/CMakeFiles/drpc.dir/rpcprovider.cc.o
  ../src/include/distributedrpc.h
+ ../src/include/drpcchannel.h
  ../src/include/drpcconfig.h
+ ../src/include/drpccontroller.h
  ../src/include/rpcheader.pb.h
  ../src/include/rpcprovider.h
  /data/home/maomao/GithubProject/DistributedRPCFrameword/src/rpcprovider.cc

@@ -7,6 +7,8 @@ example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o
 example/callee/CMakeFiles/provider.dir/userservice.cc.o
  ../example/user.pb.h
  ../src/include/distributedrpc.h
+ ../src/include/drpcchannel.h
  ../src/include/drpcconfig.h
+ ../src/include/drpccontroller.h
  ../src/include/rpcprovider.h
  /data/home/maomao/GithubProject/DistributedRPCFrameword/example/callee/userservice.cc
