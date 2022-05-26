@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include "user.pb.h"
+#include "distributedrpc.h"
+#include "rpcprovider.h"
 
 using namespace example;
 
@@ -45,10 +47,16 @@ public:
 int main(int argc,char **argv)
 {
 
-    //调用框架的初始化操作
-    //DistributedRPC::Init(argc,argv);
+    // 调用框架的初始化操作
+    DistributedRPC::Init(argc,argv);
 
+    // provider是一个rpc网络服务对象，把UesrService对象发布到rpc节点上
+    RpcProvider provider;
+    provider.NotifyService(new UserService());
+    //provider.NotifyService(new ProductService());
 
+    // 启动一个rpc服务发布节点，Run以后，进程进入阻塞状态
+    provider.Run();
     return 0;
 
 }
