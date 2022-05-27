@@ -1,5 +1,8 @@
 #pragma once
 #include "drpcconfig.h"
+#include "drpcchannel.h"
+#include "drpccontroller.h"
+
 
 // 框架基础类，负责rpc的一些初始操作
 class DistributedRPC

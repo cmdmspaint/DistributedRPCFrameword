@@ -8,6 +8,8 @@
 #include <unistd.h>
 #include <error.h>
 #include "distributedrpc.h"
+#include "drpccontroller.h"
+
 /*
     header_size + service_name method_name args_size +args
  */ 
@@ -31,7 +33,7 @@
     }
     else
     {
-        std::cout << "serialize request error!" << std::endl;
+        controller->SetFailed("serialize request error!");
         return;
     }
 
@@ -50,7 +52,7 @@
     }
     else
     {
-        std::cout << "serialize request error!" << std::endl;
+        controller->SetFailed("serialize request error!");
         return;
     }
 
@@ -76,8 +78,11 @@
 
     if(-1 == clientfd)
     {
-        std::cout << "create socket error! errno:" <<errno <<std::endl;
-        exit(EXIT_FAILURE);
+     
+        char errtxt[512] = {0};
+        sprintf(errtxt,"create socket error! errno:%d",errno);
+        controller->SetFailed(errtxt);
+        return;
     }
 
     //  读取配置文件rpcserver的信息
@@ -92,15 +97,20 @@
     // 连接rpc服务节点
     if(-1 == connect(clientfd,(struct sockaddr*)&server_addr,sizeof(server_addr)))
     {   
-        std::cout << "connect error! errno:"<< errno << std::endl;
+        char errtxt[512] = {0};
+        sprintf(errtxt,"connect error! errno:%d",errno);
+        controller->SetFailed(errtxt);
         close(clientfd);
-        exit(EXIT_FAILURE);
+        return;
     }
     
     // 发送rpc请求
     if(-1 == send(clientfd,send_rpc_str.c_str(),send_rpc_str.size(),0))
     {
-        std::cout << "send error! errno: " << errno << std::endl;
+
+        char errtxt[512] = {0};
+        sprintf(errtxt,"send error! errno:%d",errno);
+        controller->SetFailed(errtxt);
         close(clientfd);
         return;
     }
@@ -110,15 +120,20 @@
     int recv_size = 0;
     if(-1 == recv(clientfd,recv_buf,1024,0))
     {
-        std::cout << "recv error ! errno:" << errno<<std::endl;
+        char errtxt[512] = {0};
+        sprintf(errtxt,"recv error! errno:%d",errno);
+        controller->SetFailed(errtxt);
         return;
     }
 
     // 反序列化rpc调用的响应数据
-    std::string response_str(recv_buf,0,recv_size);
-    if(response->ParseFromString(response_str))
-    {
-        std::cout << "parse error! response_str:" << response_str<<std::endl;
+    //std::string response_str(recv_buf,0,recv_size); // bug出现 recv_buf中遇到\0后面的数据就存不下来了，导致反序列化失败
+    //if(!response->ParseFromString(response_str))
+    if(!response->ParseFromArray(recv_buf,recv_size))
+    {   
+        char errtxt[512] = {0};
+        sprintf(errtxt,"parse error! response_str:%s",recv_buf);
+        controller->SetFailed(errtxt);
         close(clientfd);
         return;
     }
