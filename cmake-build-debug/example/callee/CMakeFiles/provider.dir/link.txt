@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/provider.dir/userservice.cc.o CMakeFiles/provider.dir/__/user.pb.cc.o  -o ../../../bin/provider   -L/home/maomao/GithubProject/DistributedRPCFramework/lib  -Wl,-rpath,/home/maomao/GithubProject/DistributedRPCFramework/lib ../../../lib/libdrpc.a -lprotobuf -lmuduo_net -lmuduo_base -lpthread -lzookeeper_mt 
