@@ -32,7 +32,7 @@ void DrpcController::StartCancel()
 {
 
 }
-bool DrpcController::IsCanceled()
+bool DrpcController::IsCanceled() const
 {
 
 }

@@ -13,7 +13,7 @@ public:
 
     //目前未实现具体的功能
     void StartCancel();
-    bool IsCanceled();
+    bool IsCanceled() const;
     void NotifyOnCancel(google::protobuf::Closure* callback);
 private:
     bool m_failed; // RPC方法执行过程中的状态

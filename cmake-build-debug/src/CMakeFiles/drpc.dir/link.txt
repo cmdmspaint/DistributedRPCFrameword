@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libdrpc.a  CMakeFiles/drpc.dir/distributedrpc.cc.o CMakeFiles/drpc.dir/drcpcontroller.cc.o CMakeFiles/drpc.dir/drpcchannel.cc.o CMakeFiles/drpc.dir/drpcconfig.cc.o CMakeFiles/drpc.dir/logger.cc.o CMakeFiles/drpc.dir/rpcheader.pb.cc.o CMakeFiles/drpc.dir/rpcprovider.cc.o CMakeFiles/drpc.dir/zookeeper.c.o
+/usr/bin/ranlib ../../lib/libdrpc.a
