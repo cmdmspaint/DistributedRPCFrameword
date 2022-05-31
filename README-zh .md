@@ -19,7 +19,7 @@ cd ../bin
 首先编写 proto文件，生成对应的.cc和.h文件 你可以参考我example目录下的proto文件  
 将bin目录下的配置信息改为 你自己对应的服务器ip和端口  
 然后重写基类中的虚函数  
-# 调用者实例  
+# 服务者实例  
 ```
 class UserService : public UserServiceRpc  
 {
@@ -57,3 +57,32 @@ int main(int argc,char **argv)
 }
 ```
 
+# 调用者实例
+
+```
+    DistributedRPC::Init(argc,argv);
+    example::UserServiceRpc_Stub stud(new DrpcChannel());
+    example::LoginRequest request;
+    request.set_name("zhang san");
+    request.set_pwd("123456");
+    example::LoginResponse response;
+    DrpcController controller;
+    stud.Login(nullptr,&request,&response,nullptr); // RpcChannel->RpcChannel::callMethod
+    if (controller.Failed())
+    {
+       std::cout <<controller.ErrorText()<< std::endl;
+    }
+    else
+    {
+        if(0 == response.result().errcode())
+        {
+            std::cout << "rpc login response success:" << response.sucess() << std::endl;
+        }
+        else
+        {
+            std::cout << "rpc login response success:" << response.result().errmsg() << std::endl;
+        }
+    }
+    
+    return 0;
+```
