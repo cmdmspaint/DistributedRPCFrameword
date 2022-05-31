@@ -9,17 +9,17 @@ DistributedRPCFramework is a high-performance, c++-based open-source RPC framewo
 rpc provider rpc comsumer zookeeper logger-system  Asynchronous buffer queues
 
 # How to Build
-git clone git@github.com:cmdmspaint/DistributedRPCFramework.git
-cd build
-cmake ..
-make
-cd ../bin
-./provider -i config.conf
-./consumer -i config.conf
+git clone git@github.com:cmdmspaint/DistributedRPCFramework.git  
+cd build  
+cmake ..  
+make  
+cd ../bin  
+./provider -i config.conf  
+./consumer -i config.conf  
 # How to Use
-First write the proto file to generate the corresponding .cc and .h files You can refer to the proto file in my example directory
-change the configuration information in the bin directory to your own server ip and port
-Then override the virtual functions in the base class
+First write the proto file to generate the corresponding .cc and .h files You can refer to the proto file in my example directory  
+change the configuration information in the bin directory to your own server ip and port  
+Then override the virtual functions in the base class  
 # Callee Example
 ```
 class UserService : public UserServiceRpc  
