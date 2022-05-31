@@ -25,11 +25,6 @@ class UserService : public UserServiceRpc
 {
 
 public:
-    bool Login(std::string name,std::string pwd)
-    {
-        std::cout << ""<<std::endl;;
-        std::cout << ""<<std::endl;
-    }
     void Login(::google::protobuf::RpcController* controller,
                        const ::example::LoginRequest* request,
                        ::example::LoginResponse* response,
