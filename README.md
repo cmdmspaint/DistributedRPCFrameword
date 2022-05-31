@@ -20,7 +20,7 @@ cd ../bin
 First write the proto file to generate the corresponding .cc and .h files You can refer to the proto file in my example directory
 change the configuration information in the bin directory to your own server ip and port
 Then override the virtual functions in the base class
-# Caller Example
+# Callee Example
 ```
 class UserService : public UserServiceRpc  
 {
@@ -57,7 +57,7 @@ int main(int argc,char **argv)
 
 }
 ```
-# Callee Example
+# Caller Example
 
 ```
 
