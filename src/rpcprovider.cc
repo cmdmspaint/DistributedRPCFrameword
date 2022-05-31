@@ -5,7 +5,7 @@
 #include <google/protobuf/descriptor.h>
 #include "rpcheader.pb.h"
 #include "logger.h"
-
+#include "zookeeperutil.h"
 
 // 这里是框架提供给外部使用的，可以发布rpc方法的函数接口
 void RpcProvider::NotifyService(google::protobuf::Service *service)
